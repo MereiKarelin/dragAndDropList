@@ -232,9 +232,7 @@ class ProgrammaticExpansionTileState extends State<ProgrammaticExpansionTile>
   void didChangeDependencies() {
     final ThemeData theme = Theme.of(context);
     _borderColorTween.end = theme.dividerColor;
-    _headerColorTween
-      ..begin = theme.textTheme.subtitle1!.color
-      ..end = theme.colorScheme.secondary;
+    _headerColorTween..end = theme.colorScheme.secondary;
     _iconColorTween
       ..begin = theme.unselectedWidgetColor
       ..end = theme.colorScheme.secondary;
